@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generar disposicion</title>
+    <link rel="stylesheet" href="css/homeStyle.css">
+    <title>Home</title>
 </head>
 <body>
-    Tamos en el home
+    <div>
+        <h1>Generador de Disposiciones</h1>
+    </div>
+    <div class="bgDispo">
+        <form action="/alta" method="post" class="itemDispo">
+            <button type="submit">Disposicion de Alta</button>
+        </form>
+        <form action="/baja" method="post" class="itemDispo">
+            <button type="submit">Disposicion de Baja</button>
+        </form>
+        <form action="/salida" method="post" class="itemDispo">
+            <button type="submit">Disposicion de Salida</button>
+        </form>
+        <form action="/agregar" method="post" class="itemDispo">
+            <button type="submit" class="db">Agregar personal</button>
+        </form>
+    </div>
 </body>
 </html>

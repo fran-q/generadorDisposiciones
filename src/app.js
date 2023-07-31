@@ -16,6 +16,10 @@ app.set('views', path.resolve(__dirname, "views"));
 const publico = path.resolve(__dirname, "../public");
 app.use(express.static(publico));
 
+//Capturamos la informacion dentro de los formularios
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 //Configuracion de rutas
 app.use("/", mainRoutes);
 
